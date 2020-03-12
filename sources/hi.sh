@@ -1,4 +1,4 @@
-#!/bin/sh
+
 echo "Hi, please read all this carefully"
 echo "This isn't an official docker image for Expo's turtle-cli, I tried my best."
 echo " "

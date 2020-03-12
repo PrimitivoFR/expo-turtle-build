@@ -1,4 +1,4 @@
-#!/bin/sh
+
 
 # cd ["your_project_path"]
 
