@@ -17,7 +17,7 @@ Before getting started, you'll also have to get your keys (Keystore password, Ke
 Please cd into shExpoBuild and edit the [buildAndroid.sh](https://github.com/PrimitivoFR/expo-turtle-build/blob/master/sources/buildAndroid.sh) with your keys n all.
 
 
-Then you can run ```/usr/src/app/shExpoBuild/buildAndroid.sh```.
+Then you can run ```/usr/src/app/shExpoBuild/buildAndroid.sh``` with some parameters (see gitlab-ci-example.yml).
   
 
  This was made by [Thomas Martin @AppliNH on GitHub](https://github.com/AppliNH).
