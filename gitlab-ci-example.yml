@@ -3,9 +3,10 @@ image: tmprimitivo/expo-turtle-build:stable
 #please use gitlab ci env var for all this
 build:
     script:
+        - mkdir expo-apps/android/ #not required
         - npm install
         - expo login --username [EXPO_USERNAME] --password [EXPO_PASSWORD]
         - expo publish
         - expo fetch:android:keystore
         - cp /usr/src/app/shExpoBuild/buildAndroid.sh ./buildAndroid.sh
-        - ./buildAndroid.sh [EXPO_ANDROID_KEYSTORE_PASSWORD] [EXPO_ANDROID_KEY_PASSWORD] [EXPO_USERNAME] [EXPO_PASSWORD] [pathToYourJKS] [keystoreAlias]
+        - ./buildAndroid.sh [EXPO_ANDROID_KEYSTORE_PASSWORD] [EXPO_ANDROID_KEY_PASSWORD] [EXPO_USERNAME] [EXPO_PASSWORD] [pathToYourJKS] [keystoreAlias] [TARGET]
